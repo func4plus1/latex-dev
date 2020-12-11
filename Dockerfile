@@ -5,7 +5,7 @@ ARG WORKSPACE=/root
 RUN apt update && apt upgrade -y
 
 Run apt install nodejs wget build-essential zsh  -y 
-Run apt-get install latexmk 
+Run apt-get install latexmk -y 
 
 RUN git clone https://github.com/vim/vim.git && cd vim/src && ./configure &&  make && make install && \ 
 	git config --global user.name "John Doe" && \
